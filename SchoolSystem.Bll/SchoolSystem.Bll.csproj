@@ -13,7 +13,6 @@
   <ItemGroup>
     <Folder Include="Dtos\" />
     <Folder Include="Mappers\" />
-    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>
