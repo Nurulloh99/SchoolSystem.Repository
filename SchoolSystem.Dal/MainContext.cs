@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SchoolSystem.Dal.Entities;
+using SchoolSystem.Dal.EntityConfigurations;
 
 namespace SchoolSystem.Dal;
 
@@ -16,6 +17,12 @@ public class MainContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
+        modelBuilder.ApplyConfiguration(new StudentConfiguration());
+        modelBuilder.ApplyConfiguration(new TeacherConfiguration());
+        modelBuilder.ApplyConfiguration(new ClassConfiguration());
+        modelBuilder.ApplyConfiguration(new StudentClassConfiguration());
+        modelBuilder.ApplyConfiguration(new TeacherClassConfiguration());
+        modelBuilder.ApplyConfiguration(new TeacherStudentConfiguration());
     }
 
 }
