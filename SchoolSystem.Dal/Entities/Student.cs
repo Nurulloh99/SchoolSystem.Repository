@@ -8,5 +8,7 @@ public class Student
     public DateTime DateOfBirth { get; set; }
     public string Gender { get; set; }
     public string Email { get; set; }
+    public ICollection<StudentClass> StudentClasses { get; set; }
+    public ICollection<TeacherStudent> TeacherStudents { get; set; }
 }
 
