@@ -8,3 +8,4 @@ public class TeacherClass
     public long ClassId { get; set; }
     public Class Class { get; set; }
 }
+     
