@@ -11,7 +11,6 @@ public class MainContext : DbContext
     public DbSet<Teacher> Teachers { get; set; }
     public DbSet<StudentClass> StudentClasses { get; set; }
     public DbSet<TeacherClass> TeacherClasses { get; set; }
-    public DbSet<TeacherStudent> TeacherStudents { get; set; }
 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -22,7 +21,6 @@ public class MainContext : DbContext
         modelBuilder.ApplyConfiguration(new ClassConfiguration());
         modelBuilder.ApplyConfiguration(new StudentClassConfiguration());
         modelBuilder.ApplyConfiguration(new TeacherClassConfiguration());
-        modelBuilder.ApplyConfiguration(new TeacherStudentConfiguration());
     }
 
 }
