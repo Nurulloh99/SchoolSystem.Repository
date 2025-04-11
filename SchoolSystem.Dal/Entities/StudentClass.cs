@@ -6,5 +6,5 @@ public class StudentClass
     public Student Student { get; set; }
 
     public long ClassId { get; set; }
-    public Class Class { get; set; }
+    public Class Class { get; set; } 
 }
