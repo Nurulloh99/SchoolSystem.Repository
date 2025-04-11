@@ -9,7 +9,7 @@ public class Teacher
     public string Gender { get; set; }
     public string PhoneNumber { get; set; }
     public string Email { get; set; } 
-    public string SubjectSpecialization { get; set; }
+    public string SubjectSpecialization { get; set; } 
     public ICollection<TeacherClass> TeacherClasses { get; set; }
 
 }
