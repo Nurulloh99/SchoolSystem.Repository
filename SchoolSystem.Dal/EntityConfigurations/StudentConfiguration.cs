@@ -36,3 +36,4 @@ public class StudentConfiguration : IEntityTypeConfiguration<Student>
                .WithOne(sc => sc.Student)
                .HasForeignKey(sc => sc.StudentId);
     }
+}
