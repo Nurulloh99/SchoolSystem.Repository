@@ -18,7 +18,7 @@ public class TeacherClassConfiguration : IEntityTypeConfiguration<TeacherClass>
 
         builder.HasOne(tc => tc.Class)
                .WithMany(c => c.TeacherClasses)
-               .HasForeignKey(tc => tc.ClassId);
+               .HasForeignKey(tc => tc.ClassId);   
     }
 }
 
