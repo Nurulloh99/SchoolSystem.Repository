@@ -35,5 +35,5 @@ public class ClassConfiguration : IEntityTypeConfiguration<Class>
     }
 }
 
-}
+
 
