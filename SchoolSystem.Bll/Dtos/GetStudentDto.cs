@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SchoolSystem.Dal.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,5 +15,6 @@ namespace SchoolSystem.Bll.Dtos
         public DateTime DateOfBirth { get; set; }
         public string Gender { get; set; }
         public string Email { get; set; }
+        public ICollection<StudentClass> StudentClasses { get; set; }
     }
 }
